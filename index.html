@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Курс валют</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css"/>
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/daterangepicker.js"></script>
+	<script src="js/range.js"></script>
+	<script src="js/authentication.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-5 group">
+			<form>
+				<div class="col-xs-8 filter">
+					<div class="form-group">
+						<label>Выберите дату</label>
+						<div id="reportrange" class="pull-right form-control">
+							<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+							<span></span> <b class="caret"></b>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 convert">
+					<div class="btn-group-vertical currency" role="group">
+						<label>Выберите валюту</label>
+						<button type="submit" class="btn btn-default" name="ccy" value="usd">USD</button>
+						<button type="submit" class="btn btn-default" name="ccy" value="eur">EUR</button>
+						<button type="submit" class="btn btn-default" name="ccy" value="rur">RUR</button>
+						<button type="submit" class="btn btn-default" name="ccy" value="btc">BTC</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-xs-7 text-right validation">
+			<button class="btn btn-default" id="auth">Получить новые данные</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

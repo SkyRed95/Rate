@@ -1,0 +1,25 @@
+label {
+    color: white;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.group {
+    background-color: #122b40;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.validation {
+    padding: 15px;
+}
+
+#reportrange {
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 100%
+}
