@@ -10,6 +10,9 @@ $(document).ready(function () {
                 401: function () {
                     alert("401 Unauthorized");
                 }
+            },
+            success: function () {
+                $.getScript('get.js');
             }
         });
     });

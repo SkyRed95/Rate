@@ -1,5 +1,5 @@
 <?php
-$connect = new mysqli( "localhost", "SkyRed", "1596357", "rate_db" );
+$connect = new mysqli( "127.0.0.1:3306", "SkyRed", "1596357", "rate_db" );
 if ( ! isset( $_SERVER['PHP_AUTH_USER'] ) ) {
 	header( 'WWW-Authenticate: Basic realm="rate"' );
 	header( 'HTTP/1.1 401 Unauthorized' );
