@@ -3,16 +3,13 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: "auth.php",
-            // success: function(data) {
-            //     alert(data);
-            // },
+            success: function () {
+                $.getScript('js/get.js');
+            },
             statusCode: {
                 401: function () {
                     alert("401 Unauthorized");
                 }
-            },
-            success: function () {
-                $.getScript('get.js');
             }
         });
     });
