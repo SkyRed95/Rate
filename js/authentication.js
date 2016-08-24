@@ -4,7 +4,7 @@ $(document).ready(function () {
             type: "POST",
             url: "auth.php",
             success: function () {
-                $.getScript('js/get.js');
+                $.getScript('js/get_privatbank.js');
             },
             statusCode: {
                 401: function () {
