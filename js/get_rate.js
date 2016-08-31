@@ -6,8 +6,8 @@ $(document).ready(function () {
             type: "GET",
             url: "get_rate.php",
             data: {
-                data: (ccy,
-                range)
+                ccy: ccy,
+                range: range
             },
             success: function (data) {
                 document.getElementById('rate').innerHTML = data;

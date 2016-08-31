@@ -13,6 +13,9 @@ $.getJSON(privatbankAPI, function (data) {
         url: "request.php",
         data: {
             data: arr_for_server
+        },
+        success: function (data) {
+            document.getElementById('rate').innerHTML = data;
         }
     });
 })
