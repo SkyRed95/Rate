@@ -10,7 +10,7 @@ $(document).ready(function () {
                 range)
             },
             success: function (data) {
-                document.getElementById('txt1').innerHTML = data;
+                document.getElementById('rate').innerHTML = data;
             }
         });
     });
