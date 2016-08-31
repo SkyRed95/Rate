@@ -4,8 +4,8 @@ if ( ! isset( $_SERVER['PHP_AUTH_USER'] ) ) {
 	header( 'WWW-Authenticate: Basic realm="rate"' );
 	header( 'HTTP/1.1 401 Unauthorized' );
 } else {
-	$query = "SELECT * FROM `users`
-	WHERE `username` LIKE '" . $_SERVER['PHP_AUTH_USER'] . "' AND `password` LIKE '" . $_SERVER['PHP_AUTH_PW'] . "'";
+	$query = "'" . "SELECT * FROM `users`
+        WHERE `username` LIKE '" . $_SERVER['PHP_AUTH_USER'] . "' AND `password` LIKE '" . $_SERVER['PHP_AUTH_PW'];
 
 	if ( $stmt = mysqli_prepare( $connect, $query ) ) {
 		mysqli_stmt_execute( $stmt );
