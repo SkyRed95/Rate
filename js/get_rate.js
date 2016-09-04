@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#filter button").click(function () {
         var ccy = $(this, "#filter button").val();
-        var range = $("#reportrange span").text();
+        var range = $("#reportrange span").text().split(' - ');
         $.ajax({
             type: "GET",
             url: "get_rate.php",
