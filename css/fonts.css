@@ -1,8 +1,8 @@
 @font-face {
     font-family: glyphicons;
-    src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.svg);
-    src: url(../fonts/glyphicons-halflings-regular.ttf);
-    src: url(../fonts/glyphicons-halflings-regular.woff);
-    src: url(../fonts/glyphicons-halflings-regular.woff2);
+    src: url(../fonts/glyphicons/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons/glyphicons-halflings-regular.svg);
+    src: url(../fonts/glyphicons/glyphicons-halflings-regular.ttf);
+    src: url(../fonts/glyphicons/glyphicons-halflings-regular.woff);
+    src: url(../fonts/glyphicons/glyphicons-halflings-regular.woff2);
 }
