@@ -12,10 +12,7 @@ $.getJSON(privatbankAPI, function (data) {
         },
         success: function (data) {
             if (data) {
-                document.getElementById('rate').innerHTML = data;
-            }
-            else {
-                alert('Сегодня Вы уже получали данные!');
+                alert(data);
             }
         }
     });

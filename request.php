@@ -10,3 +10,6 @@ if (mysqli_num_rows($check_of_date) < 1) {
 VALUES ('" . $value[0][0] . "','" . $value[1][0] . "'," . $value[2][0] . "," . $value[3][0] . ",'" . $date . "')");
     }
 }
+else {
+    echo 'Сегодня Вы уже получали данные!';
+}
