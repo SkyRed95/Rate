@@ -16,7 +16,7 @@ Date >= '" . $range[0] . "' and Date <= '" . $range[1] . "'");
     if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         ?>
-        <tr>
+        <tr class="tr">
             <td class="ccy_td"><?php echo $row["Ccy"] ?></td>
             <td class="base_ccy_td"><?php echo $row["Base_ccy"] ?></td>
             <td><?php echo $row["Buy"] ?></td>
