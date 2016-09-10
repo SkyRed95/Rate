@@ -10,6 +10,7 @@ function drawChart() {
             Number([$tds.eq(2).text()]),
             Number([$tds.eq(3).text()])];
     })
+    alert(4)
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Date');
     data.addColumn('number', ccy);
