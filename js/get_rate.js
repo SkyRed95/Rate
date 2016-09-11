@@ -11,7 +11,8 @@ $(document).ready(function () {
             },
             success: function (data) {
                 document.getElementById('rate').innerHTML = data;
-                $.getScript('js/area_chart.js');
+                $.getScript('js/area_chart.js')
+                drawChart();
             }
         });
     });
