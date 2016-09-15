@@ -1,5 +1,3 @@
-google.charts.load('current', {'packages': ['corechart']});
-google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
     var arr_to_diagram = new Array;
     var buy = $('.buy_th').html();
