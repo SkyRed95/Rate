@@ -16,7 +16,6 @@ function drawChart() {
     data.addRows(arr_to_diagram);
 
     var options = {
-        vAxis: {minValue: 0}
     };
     var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
     chart.draw(data, options);
