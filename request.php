@@ -1,6 +1,6 @@
 <?php
 $data = $_POST['data'];
-$connect = new mysqli("localhost", "SkyRed", "1596357", "rate_db");
+$connect = new mysqli("localhost", "SkyRed", "", "rate_db");
 $date = date("Y-m-d");
 $check_of_date = $connect->query("SELECT `Date` FROM `rate` WHERE `Date` LIKE '" . $date . "'");
 

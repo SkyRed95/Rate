@@ -9,7 +9,7 @@
     <?php
     $ccy = $_GET['ccy'];
     $range = $_GET['range'];
-    $connect = new mysqli("localhost", "SkyRed", "1596357", "rate_db");
+    $connect = new mysqli("localhost", "SkyRed", "", "rate_db");
 
     $result = $connect->query("SELECT `Ccy`, `Base_ccy`, `Buy`, `Sale`, `Date` FROM `rate` WHERE `Ccy` LIKE '" . $ccy . "' and
 Date >= '" . $range[0] . "' and Date <= '" . $range[1] . "'");
